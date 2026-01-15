@@ -12,13 +12,11 @@ body {
   margin-bottom: 20px;
 }
 
-/* ⬇⬇⬇ TOHLE JE KLÍČ ⬇⬇⬇ */
 #output {
   width: 700px;
   min-height: 180px;
 }
 
-/* klaviatura */
 #keyboard {
   display: flex;
   flex-direction: column;
