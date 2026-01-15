@@ -1,1 +1,46 @@
+.vexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
 
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.octave {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+#keyboard button {
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#keyboard sup {
+  font-size: 0.6em;
+  vertical-align: super;
+  margin-left: 1px;
+}
+
+#keyboard button.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+#keyboard button.wrong {
+  background-color: #f44336;
+  color: white;
+}
+
+#result {
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 1.2em;
+}
