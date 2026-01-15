@@ -1,60 +1,76 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Fretboard Note Trainer</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 
   <!-- VexFlow -->
   <script src="https://unpkg.com/vexflow/releases/vexflow-debug.js"></script>
 
-  <!-- Tvůj JS -->
+  <!-- JS -->
   <script src="script.js" defer></script>
 </head>
 <body>
 
+  <!-- NOTOVÁ OSNOVA -->
   <div class="vexbox">
     <div id="output"></div>
+  </div>
 
-    <div id="keyboard">
-      <!-- tříčárkovaná -->
-      <div class="octave">
-        <button data-note="c/6">c<sup>3</sup></button>
-        <button data-note="d/6">d<sup>3</sup></button>
-        <button data-note="e/6">e<sup>3</sup></button>
-        <button data-note="f/6">f<sup>3</sup></button>
-        <button data-note="g/6">g<sup>3</sup></button>
-        <button data-note="a/6">a<sup>3</sup></button>
-        <button data-note="b/6">h<sup>3</sup></button>
-      </div>
+  <!-- KLAVIATURA -->
+  <div id="keyboard">
 
-      <!-- dvoučárkovaná -->
-      <div class="octave">
-        <button data-note="c/5">c<sup>2</sup></button>
-        <button data-note="d/5">d<sup>2</sup></button>
-        <button data-note="e/5">e<sup>2</sup></button>
-        <button data-note="f/5">f<sup>2</sup></button>
-        <button data-note="g/5">g<sup>2</sup></button>
-        <button data-note="a/5">a<sup>2</sup></button>
-        <button data-note="b/5">h<sup>2</sup></button>
-      </div>
+    <!-- tříčárkovaná -->
+    <div class="octave">
+      <button data-note="c/6">c<sup>3</sup></button>
+      <button data-note="d/6">d<sup>3</sup></button>
+      <button data-note="e/6">e<sup>3</sup></button>
+      <button data-note="f/6">f<sup>3</sup></button>
+      <button data-note="g/6">g<sup>3</sup></button>
+      <button data-note="a/6">a<sup>3</sup></button>
+      <button data-note="b/6">h<sup>3</sup></button>
+    </div>
 
-      <!-- jednočárkovaná -->
-      <div class="octave">
-        <button data-note="c/4">c<sup>1</sup></button>
-        <button data-note="d/4">d<sup>1</sup></button>
-        <button data-note="e/4">e<sup>1</sup></button>
-        <button data-note="f/4">f<sup>1</sup></button>
-        <button data-note="g/4">g<sup>1</sup></button>
-        <button data-note="a/4">a<sup>1</sup></button>
-        <button data-note="b/4">h<sup>1</sup></button>
-      </div>
+    <!-- dvoučárkovaná -->
+    <div class="octave">
+      <button data-note="c/5">c<sup>2</sup></button>
+      <button data-note="d/5">d<sup>2</sup></button>
+      <button data-note="e/5">e<sup>2</sup></button>
+      <button data-note="f/5">f<sup>2</sup></button>
+      <button data-note="g/5">g<sup>2</sup></button>
+      <button data-note="a/5">a<sup>2</sup></button>
+      <button data-note="b/5">h<sup>2</sup></button>
+    </div>
 
-      <!-- malá -->
-      <div class="octave">
-        <button data-note="c/3">c</button>
-        <button data-note="d/3">d</button>
-        <button data-note="e/3">e</button>
-        <button data-note="f/3">f</button>
+    <!-- jednočárkovaná -->
+    <div class="octave">
+      <button data-note="c/4">c<sup>1</sup></button>
+      <button data-note="d/4">d<sup>1</sup></button>
+      <button data-note="e/4">e<sup>1</sup></button>
+      <button data-note="f/4">f<sup>1</sup></button>
+      <button data-note="g/4">g<sup>1</sup></button>
+      <button data-note="a/4">a<sup>1</sup></button>
+      <button data-note="b/4">h<sup>1</sup></button>
+    </div>
+
+    <!-- malá -->
+    <div class="octave">
+      <button data-note="c/3">c</button>
+      <button data-note="d/3">d</button>
+      <button data-note="e/3">e</button>
+      <button data-note="f/3">f</button>
+      <button data-note="g/3">g</button>
+      <button data-note="a/3">a</button>
+      <button data-note="b/3">h</button>
+    </div>
+
+  </div>
+
+  <!-- VÝSLEDEK -->
+  <div id="result"></div>
+
+</body>
+</html>
